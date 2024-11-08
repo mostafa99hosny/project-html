@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pngtree-house-real-estate-icon-png-image_6319467.png" type="image/png">
+    <style>
+        #f {
+            background-color: rgb(230, 228, 228);
+            width: 50%;
+            margin-inline-start: 350px;
+            border-radius: 20px;
+            opacity: 0.9;
+
+        }
+
+        span {
+            display: flex;
+            justify-content: flex-start;
+            margin: 40px 60px;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .inter,
+        .gen {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            margin-left: 60px;
+        }
+
+        .but {
+            display: flex;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            gap: 100px;
+            justify-content: center;
+        }
+
+        .but input {
+            font-size: 30px;
+            color: rgb(42, 8, 8);
+            background-color: rgb(234, 255, 0);
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/gate.jpg);background-size: cover;">
+    <div id="bar" style="position: sticky;">
+        <a href="home.html">
+            <h2 id="title">VILLA</h2>
+        </a>
+        <ul>
+            <li><a class="lin" href="home.html">Home</a></li>
+            <li><a class="lin" href="properties.html">Properties</a></li>
+            <li><a class="lin" href="details.html">Details Of Property</a></li>
+            <li><a class="lin" href="contact.html">Contact Us</a></li>
+            <li><a class="lin" href="register.html">Sign Up</a></li>
+        </ul>
+    </div>
+    <h1 style="color: white; text-align: center;">Registration </h1>
+    <form target="_blank" action="home.html">
+        <fieldset id="f">
+            <legend style="color: rgb(255, 255, 255); font-size: 25px; background-color: rgb(0, 0, 0);  ">
+                personal Details</legend>
+
+            <input type="hidden" name="userId">
+            <span>
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" name="firstname" placeholder="your first name" required> <br>
+            </span>
+            <span>
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" name="lastname" placeholder="your last name" required><br>
+            </span>
+            <span>
+                <label for="mail">Email :</label>
+                <input type="email" name="email" id="mail" placeholder="Email" required>
+            </span>
+            <span>
+                <label for="pass">Password :</label>
+                <input type="password" name="password" id="pass" placeholder="Password">
+            </span>
+            <span>
+                <label for="copass">Confirm Pasword :</label>
+                <input type="password" name="repeat password" id="copass" placeholder="Confirm Password">
+            </span>
+            <span>
+                <label for="dat">Birth Date :</label>
+                <input type="date" name="date" id="dat">
+            </span>
+            <span>
+                <label for="dow">User Picture :</label>
+                <input type="file" name="file" id="dow">
+            </span>
+            <div class="gen">
+                <fieldset>
+                    <legend>gender</legend>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male </label>
+                    <input type="radio" name="gender" id="fem" value="female">
+                    <label for="fem">Female </label>
+                </fieldset>
+            </div>
+            <span>
+                <label for="fa"> your Faculty</label>
+                <select name="faculty" id="fa">
+                    <option selected disabled value=""> select your faculty</option>
+                    <option value="FCI">FCI</option>
+                    <option value="EELU">EELU</option>
+                    <option value="Dental ">Dental </option>
+                    <option value="PHARMACY">Pharmacy</option>
+                </select>
+            </span>
+            <div class="inter">
+                <p> your interes :</p>
+                <input type="checkbox" name="Interests " id="inter1" value="Programming">
+                <label for="inter1">Programming</label><br>
+                <input type="checkbox" name="Interests " id="inter2" value="Reading">
+                <label for="inter2">Reading</label><br>
+                <input type="checkbox" name="Interests " id="inter3" value="Video Games">
+                <label for="inter3">Video Games</label><br>
+                <input type="checkbox" name="Interests " id="inter4" value="Swimming">
+                <label for="inter4">Swimming</label>
+            </div>
+            <span>
+                <label for="ab"> About you :</label>
+                <textarea name=" about" id="ab"></textarea>
+            </span>
+
+
+            <label  style="font-size: 25px;" for="ag">
+
+                <input type="checkbox" name="agreed" id="ag" required>
+                I agreed
+                <a href="condition.html" target="_blank" style="font-size: 20px; color: rgb(255, 0, 0);"> to
+                    terms and condition </a>
+            </label>
+            <div class="but">
+                <input type="submit" value="Sign Up">
+                <input type="reset" value=" Delete">
+            </div>
+        </fieldset>
+    </form>
+    <div id="foot">
+        <p>Copyright &copy; 2024 Villa Agency , All rights reserved. </p>
+    </div>
+</body>
+</html>
